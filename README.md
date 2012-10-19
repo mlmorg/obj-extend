@@ -13,6 +13,7 @@ $ npm install obj-extend
 ## Usage
 
 ``` javascript
+var events = require('events');
 var extend = require('obj-extend');
 
 var Person = function (name) {
