@@ -20,7 +20,7 @@ var Person = function (name) {
   this.name = name;
 };
 
-Person.prototype = extend(events.EventEmitter.prototype, {
+extend(Person.prototype, events.EventEmitter.prototype, {
 
   emitName: function () {
     this.emit('name', this.name);
